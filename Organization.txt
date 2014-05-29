@@ -15,6 +15,11 @@ Properties:
 		
 		Example: 1234567
 
+	Resource Id:
+		In the case of an organization, the Resource Id is th the same as the Organization Id.
+
+		Example: 1234567
+
 	Organization name: 
 		The official or public name of the organization.
 
@@ -123,7 +128,7 @@ Properties
 			San Antonio, TX 78210
 
 	Phone(s):
-		The phone number used to contact an organization. A phone number can include extensions, type of phone (fax, tty, hotline) and functions. See phone for the defintion of properties.
+		The phone number used to contact where the service is provided. A phone number can include extensions, type of phone (fax, tty, hotline) and functions. See phone for the defintion of properties.
 
 		Example 210-512-3345
 
@@ -212,111 +217,202 @@ Properties:
 		Example: MSWC Pre-Natal Program		
 
 	Description:
-		A brief report describing the location.
+		A brief paragraph describing the location.
 
 		Example: 
 
 	Physical address:
+		The street address of the location. The street address is comprised of several parts including street address, city, state, postal, code, and country which are described by Address.
 
+		Example: 
+			1510 South Hackberry
+			San Antonio, TX 78210
 
 	Mailing address:
+		The address where the location receives mail. The mailing address is comprised of several parts including attention, street address, city, state, postal, code, and country which are described by Address.
 
+		Example: 
+			Attention: Health Program Administrator
+			1510 South Hackberry
+			San Antonio, TX 78210
 
 	Other address:
+		An alternate address for the location. The other address can be comprised of several parts including P.O. Box, city, state, postal, code, and country which are described by Address.
 
+		Example: 
+			P.O. Box 1086
+			San Antonio, TX 78210
 
-	Phone:
+	Phone(s):
+		The phone number used to contact the location. A phone number can include extensions, type of phone (fax, tty, hotline) and functions. See phone for the defintion of properties.
 
+		Example 210-512-3345
 
-	Internet resource:
+	Internet resource(s):
+		Internet resources such as email, web site, ftp server, Application Programming Interfaces
 
+		Example: htttp://havenforhope.org/ or asmith@havenforhope.org
 
-	Contacts:
+	Contact(s):
+		Names and titles of contacts. 
+
+		Example: April Smith, Director
 
 
 	Hours of operation:
+		Time and days when the service is available to the public.
 
+		Example: 	Sunday, 9:00AM - 1:00PM
+					Monday, 8:00AM - 5:00PM
 
 
 	Accessibility:
+		Description of aids or infrastructure that facilitate access to clients with disabilities.
 
+		Example: Wheelchair accessible
 
-	Languages:
+	Language(s):
+		Languages, other than English, spoken by the service provider.
 
+		Example: 	Spanish
 
 	Transportation:
+		Access to public transportation to and from the location.
+
+		Example: Bus 20 stop at corner of Hackberry and Pine.
 
 	Latitude:
+		Y coordinate of location expressed in decimal degrees in WGS84 datum.
 
+		Example: 	-93.35556
 
 	Longitude:
-
+		X coordinate of location expressed in decimal degrees in WGS84 datum.
 	
-
+		Example:	34.4987
 
 
 Address
+	A way to locate an Organization, Service, or Location using a well known method of referencing the location.
 
 	Properties:
 		Unique id:
+			Each address will have a unique numeric id.
+
+			Example:	1234567
 
 		Resource id:
+			Each address will have a Resource Id that will tie it to an Organization, Service or Location
+
+			Example:	7654321
 
 		Type:
+			An address can be a physical, mailing or other type
+
+			Example:	physical
 
 		Attention:
+			An address can have an 'Attention' label to specify the recipient. This is an optional property.
+
+			Example: 	Attention: Joshua Fisher
 
 		Street_1:
+			This property can contain the street number, prefix, street name, and suffix. This is a required property.
+
+			Example: 	2022 S. Palmetto Ave.
 
 		Street_2:
+			This property can contain additional information such as the suite.
 
+			Example: 	Suite 201
+		
 		City:
+			The city where the Organization, Service or Loaction resides.
+
+			Example: 	Redwood City
 
 		State:
+			The state (or province) that the Organization, Service or Loaction resides.
 
+			Example: 	California
+		
 		Postal code:
+			The postal code that the Organization, Service or Location resides.
+
+			Example: 	99043
 
 		Country:
-
-	Example:
+			The country where the Organization, Service or Location is located.
+		
+			Example: USA
 
 Contact
 	
 	Properties:
+
 		Unique id:
+			Each contact will have a unique numeric id.
+
+			Example:	1234567
 
 		Resource id:
+			Each contact will have a Resource Id that will tie it to an Organization, Service or Location
+
+			Example:	7654321
 
 		Name:
+			Name of the contact.
+
+			Example: Mary Bauer
 
 		Title:
+			Title of the contact.
+
+			Example: Director
 
 		Department:
+			The department that the contact works in.
 
-
-	Example:
-
+		Example:	Human Resources
 
 Phone
 
 	Properties:
 
 		Unique id:
+			Each phone will have a unique numeric id.
 
-		Resource id:
+			Example: 1234567
+		
+		Resource id: 
+			Each phone will have a Resource Id that will tie it to an Organization, Service or Location
+
+			Example: 7654321
 
 		Number:
+			The phone number including the area code
+
+			Example: 512-493-8778
 
 		Extension:
+			Phone extension for a specific party.
 
+			Example: ext: 210
+		
 		Type:
+			The kind of phone determined by its use, such as voice, fax, tty, or hotline.
+
+			Example:	Toll-free line
 
 		Department:
+			The department that the phone belongs to.
+
+			Example:	Warehouse
 
 		Country code:
+			The country code prefix of the phone.
 
-
-	Example:
+			Example:	19
 
 Internet Resource
 
