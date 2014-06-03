@@ -1,3 +1,5 @@
+DRAFT
+
 Organization
 
 Defintion:
@@ -455,5 +457,10 @@ will be maintained through metadata at the row level.
 
 		Last action type:     The kind of change made to the data.
 
+<<<<<<< HEAD
 			Example:    Edit, Create, Update, Delete
 	
+=======
+			Example: 	Edit, Create, Update, Delete
+	
+>>>>>>> 19a6c85731bca556679c11e39d35649da0e8dad5
