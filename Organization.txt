@@ -419,14 +419,24 @@ Internet Resource
 	Properties:
 
 		Unique id:
+			Each internet resource will have a unique numeric id.
 
-		Resource id:
+		Example: 1234567
+		
+		Resource id: 
+			Each internet resource will have a Resource Id that will tie it to an Organization, Service or Location
+
+			Example: 7654321
 
 		Resource type:
+			The kind of resource available via the Internet such as email, website, RSS feed, or Application Programming Interface.
 
+			Example:	website
+		
 		Resource:
+			The Internet address to the resource.
 
-	Example:
+			Example: 	http://mswc.org/
 
 
 
@@ -435,26 +445,53 @@ Funding
 	Properties:
 
 		Unique id:
+			Each source of funds will have a unique numeric id.
 
-		Resource id:
+		Example: 1234567
+		
+		Resource id: 
+			Each source of funds will have a Resource Id that will tie it to an Organization or a Service 
 
-		Source:
+			Example: 7654321
+		
+		Source:		
+			Where the funding came from for a Organization or a Service
+
+			Example: 	Philanthropical Ventures
 
 
 Metadata
+	A history for each record of an Organization, Location or Service will be maintained through metadata at the row level.
 
 	Properties:
 
 		Unique id:
+			Each source of funds will have a unique numeric id.
 
-		Resource id:
+			Example: 1234567
+		
+		Resource id: 
+			Each source of funds will have a Resource Id that will tie it to an Organization or a Service 
+
+			Example: 7654321
 
 		Date added:
+			The date an Organization, Serice, or Location was added to the data
+
+			Example: 2014-12-03T08:24:15
 
 		Date last verified:
+			The date the information was last checked.
+
+			Example: 2014-12-03T08:24:15
 
 		Date last action:
+			The date when information was edited, added, or deleted.
+
+			Example: 2014-12-03T08:24:15
 
 		Last action type:
+			The kind of change made to the data.
 
-	Example:
+			Example: 	Edit, Create, Update, Delete
+	
